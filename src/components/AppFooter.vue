@@ -10,8 +10,8 @@ export default{
 
 <template>
 <AppCta />
-<div class="container">
-    <div class="wrapper d-flex space-between bg-black">
+<div class="container bg-black">
+    <div class="wrapper d-flex space-between">
         <div>
             <h5>Address</h5>
             <span>lorem ipsum</span>
@@ -46,7 +46,7 @@ export default{
 
 <style lang="scss" scoped>
 *{
-    color: white;
+    color: grey;
 }
 .bg-black{
     background-color: black;

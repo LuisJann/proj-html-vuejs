@@ -7,19 +7,44 @@ export default{
 <template>
 <div class="container">
     <div class="wrapper">
-        <h4>lorem ipsum</h4>
-        <h2>Lorem ipsum dolor</h2>
+        <h4>Commerce Business</h4>
+        <h2>Distant Mentoring Program</h2>
         <button>Download free guide -></button>
     </div>
 </div>
 </template>
 
 <style lang="scss" scoped>
+@use"../styles/partials/variables.scss" as*;
 .container{
-    background-color: lightcoral;
+    background-image: url(../assets/images/home-3-hero-bg.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    padding: 230px 0;
     .wrapper{
-        padding: 70px 0;
+        padding: 20px 0;
         text-align: center;
+        h4{
+            color: white;
+            padding: 10px 0;
+        }
+        h2{
+            color: white;
+            font-size: 3rem;
+            font-weight: lighter;
+            padding:0 0 10px 0;
+        }
+        button{
+            font-weight: 600;
+            padding: 15px 20px;
+            background-color: white;
+            color: $green-color;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+        }
     }
 }
 
