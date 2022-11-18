@@ -3,13 +3,15 @@ import AppHeader from './components/AppHeader.vue';
 import AppBanner from './components/AppBanner.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppTestimonial from './components/AppTestimonial.vue';
 
 export default{
   components:{
     AppHeader,
     AppBanner,
     AppMain,
-    AppFooter
+    AppFooter,
+    AppTestimonial
   },
   data(){
     return{
@@ -25,6 +27,8 @@ export default{
 <AppHeader />
 <AppBanner />
 <AppMain />
+<AppTestimonial />
+<AppFooter />
 </template>
 
 <style lang="scss">

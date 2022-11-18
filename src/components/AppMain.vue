@@ -1,6 +1,10 @@
 <script>
+import AppCard from './AppCard.vue';
 export default{
-    name:"AppMain"
+    name:"AppMain",
+    components:{
+        AppCard,
+    }
 }
 </script>
 
@@ -44,6 +48,7 @@ export default{
             </div>
         </div>
     </div>
+    <AppCard />
 </div>
 </template>
 
