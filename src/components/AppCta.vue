@@ -8,46 +8,56 @@ export default{
 <div class="container">
     <div class="wrapper d-flex flex-column align-item-center">
         <div class="courses">
-            <span>prova prova prova</span>
-            <h2>Lorem ipsum dolor</h2>
+            <span>READ FOR MORE JOYMENT</span>
+            <h2>Latest From <span class="green-text"> Our Blogs</span></h2>
         </div>
         <div class="card-section d-flex">
             <div class="card">
-                <div class="box"></div>
-                <h4>$40.<span>00</span></h4>
-                <p>lorem ipsum dolor</p>
+                <div class="box">
+                    <img src="../assets/images/artist-blog-03-480x325.jpeg" alt="">
+                </div>
+                <span>ARTIST</span>
+                <h4>Brush Strokes Energize Trees in Painting</h4>
+
                 <div>
-                    <span>prova</span>
-                    <span>prova</span>
+                    <span>May 15,2020 </span>
+                    <span> 688 views</span>
                 </div>
             </div>
             <div class="card">
-                <div class="box"></div>
-                <h4>$40.<span>00</span></h4>
-                <p>lorem ipsum dolor</p>
+                <div class="box">
+                    <img src="../assets/images/artist-blog-01-480x325.jpg" alt="">
+                </div>
+                <span>ARTIST</span>
+                <h4>Pocket-Sized Notebooks Hold Miniature Paintings</h4>
+
                 <div>
-                    <span>prova</span>
-                    <span>prova</span>
+                    <span>May 15, 2020 </span>
+                    <span>603 views</span>
                 </div>
             </div>
             <div class="card">
-                <div class="box"></div>
-                <h4>$40.<span>00</span></h4>
-                <p>lorem ipsum dolor</p>
+                <div class="box">
+                    <img src="../assets/images/artist-blog-02-480x325.jpg" alt="">
+                </div>
+                <span>ARTIST</span>
+                <h4>Connection Between Self-Portraits and Identy</h4>
+
                 <div>
-                    <span>prova</span>
-                    <span>prova</span>
+                    <span>May 15, 2020 </span>
+                    <span> 397 views</span>
                 </div>
             </div>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="wrapper">
-        <div class="d-flex flex-column align-item-center">
-            <span>More info</span>
-            <h3>Subscribe <span>Our Blogs</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo numquam, quasi dignissimos enim qui impedit nisi expedita assumenda sint maiores saepe hic doloremque quos, consequuntur est veniam. Dolores, dolorum pariatur.</p>
-            <input type="text"><button>subscribe</button>
+        <div class="d-flex flex-column align-item-center margin-top">
+            <h3>Subscribe <span class="green-text">Our Blogs</span></h3>
+            <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
+            <div>
+                <input type="text" placeholder="Enter your email"><button>subscribe</button>
+            </div>
         </div>
     </div>
 </div>
@@ -56,14 +66,18 @@ export default{
 <style lang="scss" scoped>
 .courses{
     text-align: center;
+    margin-top: 30px;
 }
 .card{
+    width: calc(100% / 3 - 20px);
     margin: 10px 20px;
-    background-color: aquamarine;
     .box{
-        width: 200px;
-        height: 100px;
-        background-color: black;
+        width: 100%;
+
+
+        img{
+            width: 100%;
+        }
     }
 }
 </style>
