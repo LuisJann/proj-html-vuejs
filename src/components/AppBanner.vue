@@ -22,9 +22,9 @@ export default{
     background-size: contain;
     background-repeat: no-repeat;
     object-fit: contain;
-    padding: 230px 0;
+    padding: 122px 0;
     .wrapper{
-        padding: 20px 0;
+
         text-align: center;
         h4{
             color: white;

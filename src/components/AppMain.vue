@@ -9,14 +9,14 @@ export default{
 </script>
 
 <template>
-<div class="container">
+<div class="container bg-color-gray">
     <div class="wrapper">
         <div class="d-flex center align-item-center">
             <div class="text-side">
-                <span>EVERYTHING IN <span>MAXCOACH</span></span>
+                <span class="title">EVERYTHING IN <span class="bold">MAXCOACH</span></span>
                 <h2>Learn about our <span class="green-text">Work Culture</span> at MaxCoach </h2>
                 <p>Spread some time to visit our website or head office and discover our current courses, anrollment rpocedure, anda registration deadline. We're opening a new classes ecery beginning of each mounth</p>
-                <span>Have questions? <a href="">Get Free Guide -></a></span>
+                <p>Have questions? <a class="green-text" href="">Get Free Guide <i class="fa-solid fa-arrow-right"></i></a></p>
             </div>
             <div>
                 <div class="box">
@@ -45,10 +45,10 @@ export default{
                 </div>
             </div> 
             <div class="text-side">
-                <span>How we work</span>
+                <span class="title">How we work</span>
                 <h2>Upgrade Your Skills <span class="green-text">Upgrade Your Life</span> </h2>
                 <p>Opening up more opportunities in front of you to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your carrer. MaxCoach accompany learnes in qvery stage of learning.</p>
-                <span><a href="">Download free guidebook -></a></span>
+                <p><a class="link bold" href="">Download free guidebook <i class="fa-solid fa-arrow-right"></i> </a></p>
             </div>
         </div>
     </div>
@@ -59,32 +59,41 @@ export default{
 <style lang="scss" scoped>
 @use"../styles/partials/variables.scss" as*;
 
+
 .container{
-    padding: 30px 0;
+    padding-top: 100px;
     .text-side{
-        margin: 0px 15px;
+        margin: 0px 30px;
         width: 30%;
-        span{
-            color:$grey-color;
-            font-weight: bold;
+
+        .title{
+            font-size: .6rem;
         }
 
         p{
-            font-size: .8rem;
-            color:$grey-color;
+            font-size: .6rem;
+            color:$gray-color;
             margin: 10px 0;
         }
+
+        // .link{
+        //     color: ;
+        // }
+    }
+
+    .link{
+        color: black;
     }
 
     .stats{
-        padding: 20px 10px;
+        padding: 40px 20px;
         color: $green-color;
         text-align: center;
         font-size: 1.3rem;
         p{
             text-align: center;
             font-size: .6rem;
-            color: $grey-color;
+            color: $gray-color;
             margin: 0 10px;
         }
     }
@@ -97,6 +106,12 @@ export default{
             height: 200px;
             object-fit: cover;
             
+        }
+        .youtube-icon{
+            position: relative;
+            width: 30px;
+            top: 50%;
+            left: 50%;
         }
     }
 }

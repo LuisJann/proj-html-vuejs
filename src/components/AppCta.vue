@@ -5,10 +5,10 @@ export default{
 </script>
 
 <template>
-<div class="container">
-    <div class="wrapper d-flex flex-column align-item-center">
+<div class="container bg-color-gray">
+    <div class="wrapper d-flex flex-column align-item-center pd-bottom">
         <div class="courses">
-            <span>READ FOR MORE JOYMENT</span>
+            <span class="title">READ FOR MORE JOYMENT</span>
             <h2>Latest From <span class="green-text"> Our Blogs</span></h2>
         </div>
         <div class="card-section d-flex">
@@ -20,8 +20,8 @@ export default{
                 <h4>Brush Strokes Energize Trees in Painting</h4>
 
                 <div>
-                    <span>May 15,2020 </span>
-                    <span> 688 views</span>
+                    <span><i class="fa-regular fa-calendar"></i> May 15,2020 </span>
+                    <span><i class="fa-solid fa-eye"></i> 688 views</span>
                 </div>
             </div>
             <div class="card">
@@ -32,8 +32,8 @@ export default{
                 <h4>Pocket-Sized Notebooks Hold Miniature Paintings</h4>
 
                 <div>
-                    <span>May 15, 2020 </span>
-                    <span>603 views</span>
+                    <span><i class="fa-regular fa-calendar"></i> May 15, 2020 </span>
+                    <span><i class="fa-solid fa-eye"></i> 603 views</span>
                 </div>
             </div>
             <div class="card">
@@ -44,19 +44,21 @@ export default{
                 <h4>Connection Between Self-Portraits and Identy</h4>
 
                 <div>
-                    <span>May 15, 2020 </span>
-                    <span> 397 views</span>
+                    <span><i class="fa-regular fa-calendar"></i> May 15, 2020 </span>
+                    <span><i class="fa-solid fa-eye"></i> 397 views</span>
                 </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
+</div>
+<div class="container">
     <div class="wrapper">
-        <div class="d-flex flex-column align-item-center margin-top">
+        <div class="d-flex flex-column align-item-center margin-top cta-email">
             <h3>Subscribe <span class="green-text">Our Blogs</span></h3>
             <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
             <div>
-                <input type="text" placeholder="Enter your email"><button>subscribe</button>
+                <input type="text" placeholder="Enter your email
+                "><button class="bold">Subscribe</button>
             </div>
         </div>
     </div>
@@ -64,13 +66,32 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use"../styles/partials/variables.scss" as*;
 .courses{
     text-align: center;
     margin-top: 30px;
+
+    .title{
+        font-size: .6rem;
+    }
+
+    h2{
+        padding: 10px 0;
+    }
 }
 .card{
     width: calc(100% / 3 - 20px);
     margin: 10px 20px;
+    
+    h4{
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+
+    span{
+        font-size: .6rem;
+        color: $gray-color;
+    }
     .box{
         width: 100%;
 
@@ -78,6 +99,38 @@ export default{
         img{
             width: 100%;
         }
+    }
+}
+
+.cta-email{
+    padding: 30px 0;
+    h3{
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+
+    p{
+        font-size: .8rem;
+        width: 40%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    button{
+            padding: 10px 7px;
+            background-color: $green-color;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            border: 0;
+            cursor: pointer;
+    }
+
+    input{
+        width: 140px;
+        padding: 10px 14px;
+        border-radius: 5px 0 0 5px;
+        background-color: $light-gray;
+        border: 0;
     }
 }
 </style>
