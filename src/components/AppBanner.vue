@@ -19,12 +19,11 @@ export default{
 .container{
     background-image: url(../assets/images/home-3-hero-bg.jpg);
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    padding: 122px 0;
-    .wrapper{
+    background-size: cover;
 
+    height: 500px;
+    .wrapper{
+        padding: 180px;
         text-align: center;
         h4{
             color: white;

@@ -57,7 +57,7 @@ export default{
             <h3>Subscribe <span class="green-text">Our Blogs</span></h3>
             <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
             <div>
-                <input type="text" placeholder="Enter your email
+                <input type="mail" placeholder="Enter your email
                 "><button class="bold">Subscribe</button>
             </div>
         </div>

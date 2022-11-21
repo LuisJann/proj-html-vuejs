@@ -13,11 +13,7 @@ export default{
     AppFooter,
     AppTestimonial
   },
-  data(){
-    return{
-
-    }
-  }
+  
 }
 
 </script>

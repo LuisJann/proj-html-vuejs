@@ -166,7 +166,7 @@ export default{
         left: -50px;
         top: 55px;
         padding: 10px;
-        box-shadow: 2px 1px 5px 3px rgba(0,0,0,0.44);
+        box-shadow: 2px 1px 5px 3px rgba(0,0,0,0.20);
         border-radius: 5px;
 
         background-color: white;
