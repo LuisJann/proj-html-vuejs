@@ -89,9 +89,14 @@ export default{
         text-align: center;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-end;
+
+        i{
+            padding: 0 10px;
+        }
         .input-side{
             display: flex;
+
             input{
                 padding: 6px;
                 background-color: $light-gray;
@@ -112,6 +117,8 @@ export default{
             border-radius: 50px;
             font-size: .6rem;
             padding: 3px;
+            width: 15px;
+            height: 15px;
             position: absolute;
             top:10px;
         }

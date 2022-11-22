@@ -113,6 +113,7 @@ export default{
 }
 .bg-black{
     background-color: black;
+    padding: 30px 0;
 }
     ul{
         margin: 0 20px;

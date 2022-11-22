@@ -49,6 +49,9 @@ export default{
             <div>
                 <div class="box">
                     <img src="../assets/images/home-3-team-image.png" alt="">
+                    <img class="shape-5" src="../assets/images/maxcoach-shape-05-100x100.png" alt="">
+                    <img class="shape-1" src="../assets/images/maxcoach-shape-01.png" alt="">
+                    <img class="shape-7" src="../assets/images/maxcoach-shape-07-150x150.png" alt="">
                 </div>
             </div>
             <div class="text-side">
@@ -103,7 +106,28 @@ export default{
     width: 250px;
     height: 250px;
     margin: 50px 20px;
+    position: relative;
 
+    .shape-7{
+        position: absolute;
+        width: 100px;
+        top: 155px;
+        left: 200px;
+    }
+
+    .shape-1{
+        position: absolute;
+        width: 100px;
+        left: -200px;
+        top: 200px;
+    }
+
+    .shape-5{
+        position: absolute;
+        width: 100px;
+        left: -80px;
+        top: 20px;
+    }
     img{
         width: 100%;
     }

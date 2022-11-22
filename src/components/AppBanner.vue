@@ -9,7 +9,7 @@ export default{
     <div class="wrapper">
         <h4>Commerce Business</h4>
         <h2>Distant Mentoring Program</h2>
-        <button>Download free guide -></button>
+        <button>Download free guide <i class="fa-solid fa-arrow-right"></i></button>
     </div>
 </div>
 </template>
@@ -43,6 +43,12 @@ export default{
             border-radius: 5px;
             border: 0;
             cursor: pointer;
+            transition: .3s;
+
+            &:hover{
+                background-color: $green-color;
+                color: white;
+            }
         }
     }
 }

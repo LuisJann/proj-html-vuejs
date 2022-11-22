@@ -81,6 +81,12 @@ export default{
     margin: 10px 20px;
     background-color: white;
     padding-bottom: 20px;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 2px 1px 5px 3px rgba(0,0,0,0.44);
+    }
 
 
     h4{

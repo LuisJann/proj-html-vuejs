@@ -53,11 +53,13 @@ export default{
 </div>
 <div class="container">
     <div class="wrapper">
+        <img class="shape-2" src="../assets/images/maxcoach-shape-02.png" alt="">
+        <img class="shape-9" src="../assets/images/maxcoach-shape-09.png" alt="">
         <div class="d-flex flex-column align-item-center margin-top cta-email">
             <h3>Subscribe <span class="green-text">Our Blogs</span></h3>
             <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
             <div>
-                <input type="mail" placeholder="Enter your email
+                <input type="email" placeholder="Enter your email
                 "><button class="bold">Subscribe</button>
             </div>
         </div>
@@ -67,6 +69,26 @@ export default{
 
 <style lang="scss" scoped>
 @use"../styles/partials/variables.scss" as*;
+
+.wrapper{
+    position: relative;
+
+    .shape-2{
+        position: absolute;
+        width: 100px;
+        right: 100px;
+        bottom: 50px;
+        z-index: 999;
+    }
+
+    .shape-9{
+        position: absolute;
+        width: 150px;
+        right: 100px;
+        bottom: 60px;
+        z-index: 1;
+    }
+}
 .courses{
     text-align: center;
     margin-top: 30px;

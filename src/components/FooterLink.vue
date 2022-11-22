@@ -18,10 +18,10 @@ export default{
 @use"../styles/partials/variables.scss" as*;
 li{
     list-style-type: none;
-    margin: 15px 0;
+    margin: 5px 0;
             a{
                 text-decoration: none;
-                font-size: .8rem;
+                font-size: .7rem;
                 color: $gray-color;
             }
         }

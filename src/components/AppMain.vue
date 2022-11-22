@@ -21,6 +21,8 @@ export default{
             <div>
                 <div class="box">
                     <img src="../assets/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg" alt="">
+                    <img class="img-icon" src="../assets/images/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg" alt="">
+                    <img class="shape-2" src="../assets/images/maxcoach-shape-02.png" alt="">
                 </div>
             </div>            
         </div>
@@ -42,6 +44,9 @@ export default{
             <div>
                 <div class="box">
                     <img src="../assets/images/stock-full-hd-11-670x450.jpg" alt="">
+                    <img class="youtube-icon" src="../assets/images/icon-youtube-play.png" alt="">
+                    <img class="shape-5" src="../assets/images/maxcoach-shape-05-150x150.png" alt="">
+                    <img class="shape-7" src="../assets/images/maxcoach-shape-07-150x150.png" alt="">
                 </div>
             </div> 
             <div class="text-side">
@@ -62,6 +67,7 @@ export default{
 
 .container{
     padding-top: 100px;
+    position: relative;
     .text-side{
         margin: 0px 30px;
         width: 30%;
@@ -98,20 +104,52 @@ export default{
         }
     }
     .box{
-        width: 300px;
-        height: 200px;
+        width: 500px;
+        height: 300px;
         background-color: beige;
-        img{
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            
+        position: relative;
+
+        .shape-5{
+            position: absolute;
+            width: 150px;
+            left: -80px;
+            top: 10px;
         }
+
+        .shape-2{
+            position: absolute;
+            width: 90px;
+            bottom: -90px;
+            left: 400px;
+        }
+
+        .shape-7{
+            position: absolute;
+            width: 90px;
+            bottom: -50px;
+        }
+        .img-icon{
+            width: 150px;
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            border-radius: 10px;
+        }
+
         .youtube-icon{
-            position: relative;
-            width: 30px;
+            width: 60px;
+            position: absolute;
             top: 50%;
-            left: 50%;
+            left: 42%;
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        img{
+            width: 100%;
         }
     }
 }
